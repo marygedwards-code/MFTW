@@ -149,7 +149,7 @@
 
     <form id="matchForm">
       <div class="question-block">
-        <label for="q1">1. I do not like cheese unless it's on pizza.</label>
+        <label for="q1">1. I love cheese.</label>
         <input type="number" id="q1" min="1" max="5" />
         <div class="error" id="q1Error"></div>
       </div>
@@ -194,27 +194,23 @@
   </div>
 
   <script>
-    // =========================
-    // Constants
-    // =========================
+
     const QUESTIONS = [
-      "I enjoy trying new foods.",
-      "A perfect night includes music and relaxation.",
-      "I like being outdoors and active.",
-      "Communication is the most important part of a relationship.",
-      "I enjoy spontaneous adventures."
+      "I love cheese.",
+      "I love family and I look forward to having one of my own someday.",
+      "I enjoy spending free time doing arts and crafts.",
+      "I enjoy working out to enjoy food.",
+      "I am a nightowel"
     ];
 
-    // My ideal "true love" answers
-    const IDEAL_ANSWERS = [5, 5, 4, 5, 4];
+    // My ideal answers
+    const IDEAL_ANSWERS = [1, 5, 5, 5, 5];
 
     // Thresholds
-    const TRUE_LOVE_THRESHOLD = 85;
-    const FRIENDS_THRESHOLD = 65;
+    const TRUE_LOVE_THRESHOLD = 90;
+    const FRIENDS_THRESHOLD = 60;
 
-    // =========================
-    // Validation Function
-    // =========================
+
     function validate(value, errorElementId) {
       const errorElement = document.getElementById(errorElementId);
       errorElement.textContent = "";
@@ -234,16 +230,14 @@
       return true;
     }
 
-    // =========================
-    // Helper Functions
-    // =========================
+
     function getClosingRemark(score) {
       if (score >= TRUE_LOVE_THRESHOLD) {
-        return "💘 True Love! We are an amazing match!";
+        return " You make my heart race!We are running at a matched pace!";
       } else if (score >= FRIENDS_THRESHOLD) {
-        return "😊 Possible Friends! There is definitely some connection here.";
+        return "Not quite a top finisher! We can be running buddies!.";
       } else {
-        return "🏃 Run Away! We may be better off going separate directions.";
+        return " Run Away! or I guess in your case... Walk away.";
       }
     }
 
@@ -252,9 +246,7 @@
       return Math.abs(userAnswer - idealAnswer) * 5;
     }
 
-    // =========================
-    // Main App Logic
-    // =========================
+
     document.getElementById("matchForm").addEventListener("submit", function (event) {
       event.preventDefault();
 
