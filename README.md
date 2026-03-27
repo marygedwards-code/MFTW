@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HeartSync Matchmaker</title>
+  <title>Love At First Lap</title>
   <style>
     * {
       box-sizing: border-box;
@@ -138,7 +137,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>💖 HeartSync Matchmaker 💖</h1>
+    <h1>Love At First Lap</h1>
     <p class="subtitle">Answer five questions to see how compatible we are.</p>
 
     <div class="instructions">
@@ -150,31 +149,31 @@
 
     <form id="matchForm">
       <div class="question-block">
-        <label for="q1">1. I enjoy trying new foods.</label>
+        <label for="q1">1. I do not like cheese unless it's on pizza.</label>
         <input type="number" id="q1" min="1" max="5" />
         <div class="error" id="q1Error"></div>
       </div>
 
       <div class="question-block">
-        <label for="q2">2. A perfect night includes music and relaxation.</label>
+        <label for="q2">2. I love family and I look forward to having one of my own someday.</label>
         <input type="number" id="q2" min="1" max="5" />
         <div class="error" id="q2Error"></div>
       </div>
 
       <div class="question-block">
-        <label for="q3">3. I like being outdoors and active.</label>
+        <label for="q3">3. I enjoy spending free time doing arts and crafts.</label>
         <input type="number" id="q3" min="1" max="5" />
         <div class="error" id="q3Error"></div>
       </div>
 
       <div class="question-block">
-        <label for="q4">4. Communication is the most important part of a relationship.</label>
+        <label for="q4">4. I enjoy working out to enjoy food.</label>
         <input type="number" id="q4" min="1" max="5" />
         <div class="error" id="q4Error"></div>
       </div>
 
       <div class="question-block">
-        <label for="q5">5. I enjoy spontaneous adventures.</label>
+        <label for="q5">5. I am a nightowel.</label>
         <input type="number" id="q5" min="1" max="5" />
         <div class="error" id="q5Error"></div>
       </div>
