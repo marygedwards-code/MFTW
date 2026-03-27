@@ -138,7 +138,7 @@
 <body>
   <div class="container">
     <h1>Love At First Lap</h1>
-    <p class="subtitle">Answer five questions to see how compatible we are.</p>
+    <p class="subtitle">rank these 5 statements to see how compatable we are.</p>
 
     <div class="instructions">
       <strong>How it works:</strong>
@@ -173,7 +173,7 @@
       </div>
 
       <div class="question-block">
-        <label for="q5">5. I am a nightowel.</label>
+        <label for="q5">5. I am a night owel.</label>
         <input type="number" id="q5" min="1" max="5" />
         <div class="error" id="q5Error"></div>
       </div>
@@ -200,7 +200,7 @@
       "I love family and I look forward to having one of my own someday.",
       "I enjoy spending free time doing arts and crafts.",
       "I enjoy working out to enjoy food.",
-      "I am a nightowel"
+      "I am a night owel."
     ];
 
     // My ideal answers
@@ -235,9 +235,9 @@
       if (score >= TRUE_LOVE_THRESHOLD) {
         return " You make my heart race!We are running at a matched pace!";
       } else if (score >= FRIENDS_THRESHOLD) {
-        return "Not quite a top finisher! We can be running buddies!.";
+        return "Not quite a top finisher! We can be running buddies!";
       } else {
-        return " Run Away! or I guess in your case... Walk away.";
+        return " Run Away! Or I guess in your case... Walk away.";
       }
     }
 
